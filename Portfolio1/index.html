@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikita | Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="logo">Nikita</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About Me</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link">Contact Me</a></li>
+        </ul>
+      </nav>
+      <button class="toggle-mode" id="darkModeToggle">🌙</button>
+    </div>
+  </header>
+
+  <section id="home" class="section home">
+    <div class="container home__container">
+      <div class="home__text">
+        <h2>Hello, I'm <span>Nikita</span></h2>
+        <h3>A Passionate Web Developer</h3>
+        <p>I design and develop modern, responsive websites that blend aesthetics with functionality. Let's build something amazing together!</p>
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+      <div class="home__image">
+        <img 
+          src="https://plus.unsplash.com/premium_photo-1661699022704-01f2f2c15bec?auto=format&fit=crop&w=600&q=60" 
+          alt="Woman working on a laptop" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container about__container">
+      <div class="about__image">
+        <img 
+          src="https://images.unsplash.com/photo-1672957603474-fe1d31c482e4?auto=format&fit=crop&w=600&q=60"
+          alt="modern workspace" />
+      </div>
+      <div class="about__text">
+        <h2>About Me</h2>
+        <p>
+          I’m a <strong>web developer</strong> and creative thinker who loves turning ideas into visually engaging digital experiences.  
+          I specialize in <strong>HTML, CSS, and JavaScript</strong> and value precision, aesthetics, and user empathy in every project.
+        </p>
+        <p>
+          My approach combines simplicity and functionality to create interfaces that feel intuitive and timeless.  
+          I believe in coding clean, scalable, and elegant solutions that empower people and brands.
+        </p>
+        <a href="#skills" class="btn">View My Skills</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills__list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>React</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container contact__container">
+      <div class="contact__text">
+        <h2>Contact Me</h2>
+        <p>Let’s connect! Whether you have a project, collaboration idea, or just want to say hi —  
+        I’d love to hear from you.</p>
+        <p><strong>Email:</strong> nikita@example.com</p>
+        <p><strong>Location:</strong> Jaipur, India</p>
+      </div>
+
+      <form action="https://formspree.io/f/mqkrrbzw" method="POST" class="contact__form">
+        <div class="form__group">
+          <input type="text" name="name" id="name" required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form__group">
+          <input type="email" name="email" id="email" required />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form__group">
+          <textarea name="message" id="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Nikita | Crafted with passion & coffee ☕</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
